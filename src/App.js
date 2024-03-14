@@ -32,19 +32,19 @@ function App() {
 
   return (
     <>
-    <Navbar />
-    <BrowserRouter>
-      <Routes>
-        <Route exact path="/" element={<Konyvek konyvek={konyvek} setKonyvek={setKonyvek} konyv={konyv} setKonyv={setKonyv} />} />
-        <Route path="/konyv" element={<Konyvek konyvek={konyvek} setKonyvek={setKonyvek} konyv={konyv} setKonyv={setKonyv} />} />
-        <Route path="/konyv/:id" element={<KonyvSelect konyvek={konyvek} setKonyvek={setKonyvek} konyv={konyv} setKonyv={setKonyv} />} />
-        <Route path="/uj-konyv" element={<KonyvPost setFetchPending={setFetchPending}/>} />
-        <Route path="/konyv-szerkesztese/:id" element={<KonyvPut konyv={konyv} setKonyv={setKonyv} setFetchPending={setFetchPending}/>} />
-        <Route path="/konyv-torles/:id" element={<KonyvTorles setFetchPending={setFetchPending} konyv={konyv} setKonyv={setKonyv} />} />
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<Konyvek konyvek={konyvek} setKonyvek={setKonyvek} konyv={konyv} setKonyv={setKonyv} />} />
+          <Route path="/konyv" element={<Konyvek konyvek={konyvek} setKonyvek={setKonyvek} konyv={konyv} setKonyv={setKonyv} />} />
+          <Route path="/konyv/:id" element={<KonyvSelect konyvek={konyvek} setKonyvek={setKonyvek} konyv={konyv} setKonyv={setKonyv} />} />
+          <Route path="/uj-konyv" element={<KonyvPost setFetchPending={setFetchPending} />} />
+          <Route path="/konyv-szerkesztese/:id" element={<KonyvPut konyv={konyv} setKonyv={setKonyv} setFetchPending={setFetchPending} />} />
+          <Route path="/konyv-torles/:id" element={<KonyvTorles setFetchPending={setFetchPending} konyv={konyv} setKonyv={setKonyv} />} />
+        </Routes>
+      </BrowserRouter>
     </>
-    
+
   );
 }
 
