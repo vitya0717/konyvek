@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/konyvek/static/css/main.2aa0d54f.css",
+    "main.js": "/konyvek/static/js/main.ebe40711.js",
+    "static/media/bootstrap-icons.woff?": "/konyvek/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/konyvek/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "index.html": "/konyvek/index.html",
+    "main.2aa0d54f.css.map": "/konyvek/static/css/main.2aa0d54f.css.map",
+    "main.ebe40711.js.map": "/konyvek/static/js/main.ebe40711.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2aa0d54f.css",
+    "static/js/main.ebe40711.js"
+  ]
+}
